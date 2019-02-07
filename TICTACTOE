@@ -1,5 +1,5 @@
 <!--TICTACTOE w/ decent AI-->
-<!--Made by Cole N and Chris P-->
+<!--Made by Cole N and Chris-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,85 +65,115 @@ function selectPlaceOnBoard(param1, param2) {
         // Place Computer's Mark
         if (winnerFound == false) {
             var computerSelectionMade = false;
+            
             while (computerSelectionMade == false && numberOfSelectionsMade < 9) {
-                if (place[1] == "Z" && place[2] == "X" && place[3] == "X") {
-                    computerMove = 1
-                }
-                else if (place[1] == "X" && place[2] == "Z" && place[3] == "X") {
-                    computerMove = 2
-                }
-                else if (place[1] == "X" && place[2] == "X" && place[3] == "Z") {
-                    computerMove = 3
-                }
-                else if (place[4] == "Z" && place[5] == "X" && place[6] == "X") {
-                    computerMove = 4
-                }
-                else if (place[4] == "X" && place[5] == "Z" && place[6] == "X") {
-                    computerMove = 5
-                }
-                else if (place[4] == "X" && place[5] == "X" && place[6] == "Z") {
-                    computerMove = 6
-                }
-                else if (place[7] == "Z" && place[8] == "X" && place[9] == "X") {
-                    computerMove = 7
-                }
-                else if (place[7] == "X" && place[8] == "Z" && place[9] == "X") {
-                    computerMove = 8
-                }
-                else if (place[7] == "X" && place[8] == "X" && place[9] == "Z") {
-                    computerMove = 9
-                }
-                else if (place[1] == "Z" && place[4] == "X" && place[7] == "X") {
-                    computerMove = 1
-                }
-                else if (place[1] == "X" && place[4] == "Z" && place[7] == "X") {
-                    computerMove = 4
-                }
-                else if (place[1] == "X" && place[4] == "X" && place[7] == "Z") {
-                    computerMove = 7
-                }
-                else if (place[2] == "Z" && place[5] == "X" && place[8] == "X") {
-                    computerMove = 2
-                }
-                else if (place[2] == "X" && place[5] == "Z" && place[8] == "X") {
-                    computerMove = 5
-                }
-                else if (place[2] == "X" && place[5] == "X" && place[8] == "Z") {
-                    computerMove = 8
-                }
-                else if (place[3] == "Z" && place[6] == "X" && place[9] == "X") {
-                    computerMove = 3
-                }
-                else if (place[3] == "X" && place[6] == "Z" && place[9] == "X") {
-                    computerMove = 6
-                }
-                else if (place[3] == "X" && place[6] == "X" && place[9] == "Z") {
-                    computerMove = 9
-                }
-                else if (place[1] == "Z" && place[5] == "X" && place[9] == "X") {
-                    computerMove = 1
-                }
-                else if (place[1] == "X" && place[5] == "Z" && place[9] == "X") {
-                    computerMove = 5
-                }
-                else if (place[1] == "X" && place[5] == "X" && place[9] == "Z") {
-                    computerMove = 9
-                }
-                else if (place[3] == "Z" && place[5] == "X" && place[7] == "X") {
-                    computerMove = 3
-                }
-                else if (place[3] == "X" && place[5] == "Z" && place[7] == "X") {
-                    computerMove = 5
-                }
-                else if (place[3] == "X" && place[5] == "X" && place[7] == "Z") {
-                    computerMove = 7
-                }
-                else {
-                    var computerMove = Math.floor((Math.random() * 10) + 1);
-                    if (computerMove == 10) {
+                
+                if (place[1] == "Z" && place[2] == "O" && place[3] == "O") {
+                    computerMove = 1;
+                } else if (place[1] == "O" && place[2] == "Z" && place[3] == "O") {
+                    computerMove = 2;
+                } else if (place[1] == "O" && place[2] == "O" && place[3] == "Z") {
+                    computerMove = 3;
+                } else if (place[4] == "Z" && place[5] == "O" && place[6] == "O") {
+                    computerMove = 4;
+                } else if (place[4] == "O" && place[5] == "Z" && place[6] == "O") {
+                    computerMove = 5;
+                } else if (place[4] == "O" && place[5] == "O" && place[6] == "Z") {
+                    computerMove = 6;
+                } else if (place[7] == "Z" && place[8] == "O" && place[9] == "O") {
+                    computerMove = 7;
+                } else if (place[7] == "O" && place[8] == "Z" && place[9] == "O") {
+                    computerMove = 8;
+                } else if (place[7] == "O" && place[8] == "O" && place[9] == "Z") {
+                    computerMove = 9;
+                } else if (place[1] == "Z" && place[4] == "O" && place[7] == "O") {
+                    computerMove = 1;
+                } else if (place[1] == "O" && place[4] == "Z" && place[7] == "O") {
+                    computerMove = 4;
+                } else if (place[1] == "O" && place[4] == "O" && place[7] == "Z") {
+                    computerMove = 7;
+                } else if (place[2] == "Z" && place[5] == "O" && place[8] == "O") {
+                    computerMove = 2;
+                } else if (place[2] == "O" && place[5] == "Z" && place[8] == "O") {
+                    computerMove = 5;
+                } else if (place[2] == "O" && place[5] == "O" && place[8] == "Z") {
+                    computerMove = 8;
+                } else if (place[3] == "Z" && place[6] == "O" && place[9] == "O") {
+                    computerMove = 3;
+                } else if (place[3] == "O" && place[6] == "Z" && place[9] == "O") {
+                    computerMove = 6;
+                } else if (place[3] == "O" && place[6] == "O" && place[9] == "Z") {
+                    computerMove = 9;
+                } else if (place[1] == "Z" && place[5] == "O" && place[9] == "O") {
+                    computerMove = 1;
+                } else if (place[1] == "O" && place[5] == "Z" && place[9] == "O") {
+                    computerMove = 5;
+                } else if (place[1] == "O" && place[5] == "O" && place[9] == "Z") {
+                    computerMove = 9;
+                } else if (place[3] == "Z" && place[5] == "O" && place[7] == "O") {
+                    computerMove = 3;
+                } else if (place[3] == "O" && place[5] == "Z" && place[7] == "O") {
+                    computerMove = 5;
+                } else if (place[3] == "O" && place[5] == "O" && place[7] == "Z") {
+                    computerMove = 7;
+                } else {
+                    // NOTE: BUG IS IN HERE SOMEWHERE!
+                    if (place[1] == "Z" && place[2] == "X" && place[3] == "X") {
+                        computerMove = 1;
+                    } else if (place[1] == "X" && place[2] == "Z" && place[3] == "X") {
+                        computerMove = 2;
+                    } else if (place[1] == "X" && place[2] == "X" && place[3] == "Z") {
+                        computerMove = 3;
+                    } else if (place[4] == "Z" && place[5] == "X" && place[6] == "X") {
+                        computerMove = 4;
+                    } else if (place[4] == "X" && place[5] == "Z" && place[6] == "X") {
                         computerMove = 5;
+                    } else if (place[4] == "X" && place[5] == "X" && place[6] == "Z") {
+                        computerMove = 6;
+                    } else if (place[7] == "Z" && place[8] == "X" && place[9] == "X") {
+                        computerMove = 7;
+                    } else if (place[7] == "X" && place[8] == "Z" && place[9] == "X") {
+                        computerMove = 8;
+                    } else if (place[7] == "X" && place[8] == "X" && place[9] == "Z") {
+                        computerMove = 9;
+                    } else if (place[1] == "Z" && place[4] == "X" && place[7] == "X") {
+                        computerMove = 1;
+                    } else if (place[1] == "X" && place[4] == "Z" && place[7] == "X") {
+                        computerMove = 4;
+                    } else if (place[1] == "X" && place[4] == "X" && place[7] == "Z") {
+                        computerMove = 7;
+                    } else if (place[2] == "Z" && place[5] == "X" && place[8] == "X") {
+                        computerMove = 2;
+                    } else if (place[2] == "X" && place[5] == "Z" && place[8] == "X") {
+                        computerMove = 5;
+                    } else if (place[2] == "X" && place[5] == "X" && place[8] == "Z") {
+                        computerMove = 8;
+                    } else if (place[3] == "Z" && place[6] == "X" && place[9] == "X") {
+                        computerMove = 3;
+                    } else if (place[3] == "X" && place[6] == "Z" && place[9] == "X") {
+                        computerMove = 6;
+                    } else if (place[3] == "X" && place[6] == "X" && place[9] == "Z") {
+                        computerMove = 9;
+                    } else if (place[1] == "Z" && place[5] == "X" && place[9] == "X") {
+                        computerMove = 1;
+                    } else if (place[1] == "X" && place[5] == "Z" && place[9] == "X") {
+                        computerMove = 5;
+                    } else if (place[1] == "X" && place[5] == "X" && place[9] == "Z") {
+                        computerMove = 9;
+                    } else if (place[3] == "Z" && place[5] == "X" && place[7] == "X") {
+                        computerMove = 3;
+                    } else if (place[3] == "X" && place[5] == "Z" && place[7] == "X") {
+                        computerMove = 5;
+                    } else if (place[3] == "X" && place[5] == "X" && place[7] == "Z") {
+                        computerMove = 7;
+                    } else {
+                        var computerMove = Math.floor((Math.random() * 10) + 1);
+                        if (computerMove == 10) {
+                            computerMove = 5;
+                        }
                     }
                 }
+                
                 if (place[computerMove] == 'Z') {
                     place[computerMove] = 'O';
                     document.getElementById("button-" + computerMove).innerHTML = 'O';
@@ -151,6 +181,7 @@ function selectPlaceOnBoard(param1, param2) {
                     numberOfSelectionsMade += 1;
                     winnerFound = checkForWinner();
                 }
+                
             }
         }
         
@@ -226,6 +257,7 @@ function checkForWinner() {
         return false;
     }
 }
+
 </script>
 </body>
 </html>                        
