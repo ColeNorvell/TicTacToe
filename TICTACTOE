@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Live coding session </title>
+  <title> TicTacToeJS </title>
 </head>
 <body>
   
@@ -258,6 +258,8 @@ function checkForWinner() {
     }
 }
 
+
+
 </script>
 </body>
-</html>                        
+</html>
