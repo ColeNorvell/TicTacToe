@@ -6,7 +6,7 @@
   .comic {font-family: "comic sans ms"}
 
 </style>
-<style> h1{text-align:center} h2{text-align:right} .comic {font-family:"comic sans ms", cursive, sans-serif;} .impact {font-family:impact, charcoal, sans-serif} </style> </head>
+<style> h1{text-align:center; color:green} h2{text-align:right; color:aqua} .comic {font-family:"comic sans ms", cursive, sans-serif;} .impact {font-family:impact, charcoal, sans-serif} </style> </head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
