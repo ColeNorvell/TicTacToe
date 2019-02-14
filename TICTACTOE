@@ -268,11 +268,5 @@ function checkForWinner() {
 }
 
 </script>
-<br>
-<footer>
-<a class = "comic"
-href="https://github.com/ColeNorvell/ColeNorvell.github.io/blob/master/index.html">The code behind the program</a>
-</footer>
-
 </body>
 </html>
