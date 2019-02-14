@@ -1,25 +1,35 @@
 <!--TICTACTOE w/ decent AI-->
 <!--Made by Cole N and Chris-->
 <!DOCTYPE html>
-<html>
-<head>
-  <title> TicTacToeJS </title>
+<html lang="en">
+<style>
+  .comic {font-family: "comic sans ms"}
+
+</style>
+<style> h1{text-align:center} h2{text-align:right} .comic {font-family:"comic sans ms", cursive, sans-serif;} .impact {font-family:impact, charcoal, sans-serif} </style> </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title> TicTacToeJS </title>
 </head>
 <body>
-  
-  <h1>TicTacToeJS</h1>
+    <h1 class ="comic">TicTacToeJS</h1>
 
-  <button id="button-1" onclick="selectPlaceOnBoard('button-1', 1);">:)</button>
-  <button id="button-2" onclick="selectPlaceOnBoard('button-2', 2);">:)</button>
-  <button id="button-3" onclick="selectPlaceOnBoard('button-3', 3);">:)</button> <br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-  <button id="button-4" onclick="selectPlaceOnBoard('button-4', 4);">:)</button>
-  <button id="button-5" onclick="selectPlaceOnBoard('button-5', 5);">:)</button>
-  <button id="button-6" onclick="selectPlaceOnBoard('button-6', 6);">:)</button> <br>
+    <button id="button-1" onclick="selectPlaceOnBoard('button-1', 1);">:)</button>
+    <button id="button-2" onclick="selectPlaceOnBoard('button-2', 2);">:)</button>
+    <button id="button-3" onclick="selectPlaceOnBoard('button-3', 3);">:)</button> <br>
 
-  <button id="button-7" onclick="selectPlaceOnBoard('button-7', 7);">:)</button>
-  <button id="button-8" onclick="selectPlaceOnBoard('button-8', 8);">:)</button>
-  <button id="button-9" onclick="selectPlaceOnBoard('button-9', 9);">:)</button> <br>
+    <button id="button-4" onclick="selectPlaceOnBoard('button-4', 4);">:)</button>
+    <button id="button-5" onclick="selectPlaceOnBoard('button-5', 5);">:)</button>
+    <button id="button-6" onclick="selectPlaceOnBoard('button-6', 6);">:)</button> <br>
+
+    <button id="button-7" onclick="selectPlaceOnBoard('button-7', 7);">:)</button>
+    <button id="button-8" onclick="selectPlaceOnBoard('button-8', 8);">:)</button>
+    <button id="button-9" onclick="selectPlaceOnBoard('button-9', 9);">:)</button> <br>
 
 <script>
 
@@ -50,8 +60,8 @@ var numberOfSelectionsMade = 0;
 var winnerFound = checkForWinner();
 
 function selectPlaceOnBoard(param1, param2) {
-   if (winnerFound == true) {
-      return;
+    if (winnerFound == true) {
+        return;
    }
 
     // If the spot selected is open, place the player's mark
@@ -117,7 +127,6 @@ function selectPlaceOnBoard(param1, param2) {
                 } else if (place[3] == "O" && place[5] == "O" && place[7] == "Z") {
                     computerMove = 7;
                 } else {
-                    // NOTE: BUG IS IN HERE SOMEWHERE!
                     if (place[1] == "Z" && place[2] == "X" && place[3] == "X") {
                         computerMove = 1;
                     } else if (place[1] == "X" && place[2] == "Z" && place[3] == "X") {
@@ -258,8 +267,12 @@ function checkForWinner() {
     }
 }
 
-
-
 </script>
+<br>
+<footer>
+<a class = "comic"
+href="https://github.com/ColeNorvell/ColeNorvell.github.io/blob/master/index.html">The code behind the program</a>
+</footer>
+
 </body>
 </html>
