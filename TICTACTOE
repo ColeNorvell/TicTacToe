@@ -14,22 +14,36 @@
 </head>
 <body>
     <h1 class ="comic">TicTacToeJS</h1>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <button id="button-1" onclick="selectPlaceOnBoard('button-1', 1);">:)</button>
-    <button id="button-2" onclick="selectPlaceOnBoard('button-2', 2);">:)</button>
-    <button id="button-3" onclick="selectPlaceOnBoard('button-3', 3);">:)</button> <br>
+    <!-- Center Tag Baby! -->
+    <center>
 
-    <button id="button-4" onclick="selectPlaceOnBoard('button-4', 4);">:)</button>
-    <button id="button-5" onclick="selectPlaceOnBoard('button-5', 5);">:)</button>
-    <button id="button-6" onclick="selectPlaceOnBoard('button-6', 6);">:)</button> <br>
+    <button class=comic id="button-1" onclick="selectPlaceOnBoard('button-1', 1);">:)</button>
+    <button class=comic id="button-2" onclick="selectPlaceOnBoard('button-2', 2);">:)</button>
+    <button class=comic id="button-3" onclick="selectPlaceOnBoard('button-3', 3);">:)</button> <br>
 
-    <button id="button-7" onclick="selectPlaceOnBoard('button-7', 7);">:)</button>
-    <button id="button-8" onclick="selectPlaceOnBoard('button-8', 8);">:)</button>
-    <button id="button-9" onclick="selectPlaceOnBoard('button-9', 9);">:)</button> <br>
+    <button class=comic id="button-4" onclick="selectPlaceOnBoard('button-4', 4);">:)</button>
+    <button class=comic id="button-5" onclick="selectPlaceOnBoard('button-5', 5);">:)</button>
+    <button class=comic id="button-6" onclick="selectPlaceOnBoard('button-6', 6);">:)</button> <br>
+
+    <button class=comic id="button-7" onclick="selectPlaceOnBoard('button-7', 7);">:)</button>
+    <button class=comic id="button-8" onclick="selectPlaceOnBoard('button-8', 8);">:)</button>
+    <button class=comic id="button-9" onclick="selectPlaceOnBoard('button-9', 9);">:)</button> <br>
+
+    <br>
+
+<button class="btn btn-outline-danger btn-sm active comic" id="resetProgram" onclick="resetProgram()">Reset</button>
+
+<br>
+<footer>
+<a class = "comic"
+href="https://github.com/ColeNorvell/ColeNorvell.github.io/blob/master/index.html">The code behind the program</a>
+</footer>
+
+</center>
 
 <script>
 
@@ -267,6 +281,10 @@ function checkForWinner() {
     }
 }
 
+
+function resetProgram() {
+  location.reload();
+}
 </script>
 </body>
 </html>
