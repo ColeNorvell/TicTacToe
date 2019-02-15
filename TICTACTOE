@@ -281,7 +281,6 @@ function checkForWinner() {
     }
 }
 
-
 function resetProgram() {
   location.reload();
 }
